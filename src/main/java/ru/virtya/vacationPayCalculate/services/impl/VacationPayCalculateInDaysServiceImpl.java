@@ -20,7 +20,7 @@ public class VacationPayCalculateInDaysServiceImpl implements VacationPayCalcula
     private static final Logger log = LoggerFactory.getLogger(VacationPayCalculateInDaysServiceImpl.class);
 
     private final static int CURRENT_YEAR = LocalDate.now().getYear();
-    private final static DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("dd-MM-yyyy");
+    private final static DateTimeFormatter DATE_TIME_FORMATTER = DateTimeFormatter.ofPattern("dd-MM-yyyy");
 
     public static List<LocalDate> getHolidays() {
         return Stream.of(
@@ -83,7 +83,7 @@ public class VacationPayCalculateInDaysServiceImpl implements VacationPayCalcula
     }
 
     private LocalDate getDateFromString(String date) {
-        return LocalDate.parse(date, dateTimeFormatter);
+        return LocalDate.parse(date, DATE_TIME_FORMATTER);
     }
 
     private boolean isWorkDay(LocalDate vacationDay) {
