@@ -10,9 +10,10 @@ GET "/calculacte"*
 Доп. задание: При запросе также можно указать точные дни ухода в отпуск, тогда должен проводиться рассчет отпускных с учётом праздников и выходных*
 
 ## Requests
-'*localhost:8080/calculate?averageSalary=20000&vacationDays=10*
+**Запрос с указанием средней зарплаты за год и дней отпуска**
 
-**Запрос с указанием средней зарплаты за год и дней отпуска**'
+>*localhost:8080/calculate?averageSalary=20000&vacationDays=10*
+
 
 *localhost:8080/calculate?averageSalary=20000&vacationDays=10&startDate=28-04-2023&endDate=10-05-2023*
 
