@@ -14,27 +14,22 @@ GET "/calculacte"*
 **Запрос с указанием средней зарплаты за год и дней отпуска:**
 
 *localhost:8080/calculate?averageSalary=20000&vacationDays=10*
-
-
+<hr>
 **Запрос с указанием точной даты ухода в отпуск и возвращения из отпуска:**
 
 *localhost:8080/calculate?averageSalary=20000&vacationDays=10&startDate=28-04-2023&endDate=10-05-2023*
-
-
+<hr>
 **Запрос, возвращающий ошибку форматирования:**
 
 *localhost:8080/calculate?averageSalary=20000&vacationDays=10&startDate=28-4-2023&endDate=10-05-203*
-
-
+<hr>
 **Запрос, возвращающий MissingParameterException:**
 
 *localhost:8080/calculate?averageSalary=20000&vacatio=10&startDate=28-04-2023&endDate=10-05-2023*
-
-
+<hr>
 **Запрос, возвращающий ошибку IllegalArgumentException:**
 
 *localhost:8080/calculate?averageSalary=-20000&vacationDays=0*
-
 
 ## Image examples
 **Запрос с указанием средней зарплаты за год и дней отпуска:**
