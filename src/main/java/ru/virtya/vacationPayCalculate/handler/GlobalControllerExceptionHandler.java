@@ -17,7 +17,7 @@ public class GlobalControllerExceptionHandler {
     public @ResponseBody ResponseEntity<ErrorDto> handleMissingParams(MissingServletRequestParameterException e) {
 
         return new ResponseEntity<>(
-                new ErrorDto(e.getMessage(), LocalDate.now()), HttpStatus.CONFLICT
+                new ErrorDto(e.getMessage(), LocalDate.now()), HttpStatus.BAD_REQUEST
         );
     }
 }

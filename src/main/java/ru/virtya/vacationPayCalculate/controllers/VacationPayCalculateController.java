@@ -1,6 +1,8 @@
 package ru.virtya.vacationPayCalculate.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -59,7 +61,7 @@ public class VacationPayCalculateController {
             return vacationPayCalculateService.getCalculateVacationPay(avgSalaryPerYear, vacationDays);
 
         } catch (IllegalArgumentException | DateTimeParseException e) {
-            return new ErrorDto(e.getMessage(), LocalDate.now());
+            return new ResponseEntity<>(new ErrorDto(e.getMessage(), LocalDate.now()), HttpStatus.BAD_REQUEST);
         }
     }
 }
