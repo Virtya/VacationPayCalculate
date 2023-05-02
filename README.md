@@ -33,16 +33,21 @@ ____
 
 ## Image examples
 **Запрос с указанием средней зарплаты за год и дней отпуска:**
+
 ![StandartRequest](https://user-images.githubusercontent.com/80851155/235643283-118f8ddc-05e3-4f2e-aaed-eb751554f55f.png)
-
+____
 **Запрос с указанием точной даты ухода в отпуск и возвращения из отпуска:**
+
 ![OptionalRequest](https://user-images.githubusercontent.com/80851155/235643914-226f4d84-73ba-4f2e-b97c-74eff1f093ba.png)
-
+____
 **Запрос, возвращающий ошибку форматирования:**
+
 ![ParseError](https://user-images.githubusercontent.com/80851155/235644145-e646cdca-0a0a-4aba-b2a2-aaf1e0cff17d.png)
-
+____
 **Запрос, возвращающий MissingParameterException:**
-![MissingParameterException](https://user-images.githubusercontent.com/80851155/235644485-87a3e9da-c66d-48f3-aed4-674f06b4db46.png)
 
+![MissingParameterException](https://user-images.githubusercontent.com/80851155/235644485-87a3e9da-c66d-48f3-aed4-674f06b4db46.png)
+____
 **Запрос, возвращающий IllegalArgumentException:**
+
 ![IllegalArgumentException](https://user-images.githubusercontent.com/80851155/235644861-87e1644e-53f2-4c18-ad9c-1f63812f30bf.png)
