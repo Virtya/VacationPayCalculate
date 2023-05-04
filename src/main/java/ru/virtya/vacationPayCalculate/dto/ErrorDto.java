@@ -1,12 +1,14 @@
 package ru.virtya.vacationPayCalculate.dto;
 
 import lombok.AllArgsConstructor;
-import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
 import java.time.LocalDate;
 
 @AllArgsConstructor
-@Data
+@Getter
+@Setter
 public class ErrorDto {
 
     private String message;
